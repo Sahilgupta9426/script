@@ -6,36 +6,42 @@ element selectors:
 
 */
 
-// 1. Single element selector
-let element = document.getElementById('myfirst');
-// element = element.className;
-// element = element.childNodes;
-// element = element.parentNode;
-element.style.color = 'red';
-element.innerText = 'Harry is a good boy';
-element.innerHTML = '<b>Harry is a good boy</b>';
-// console.log(element.innerText);
 
 
-let sel = document.querySelector('#myfirst');
-sel = document.querySelector('.child');
-sel = document.querySelector('div');
-sel.style.color = 'green';
-console.log(sel)
 
-// 2. Multi element selector
-let elems = document.getElementsByClassName('child');
-elems = document.getElementsByClassName('container');
-elems = document.getElementsByTagName('div');
-console.log(elems)
+// let element=document.getElementById('myfirst');
+// console.log(element);
+// console.log(element.className);
+// console.log(element.childNodes);
+// console.log(element.parentNode);
+// element.style.color='red';
+// element.innerText='sahil gupta';
+// element.innerHTML='<b>its me</b>';
+// console.log(element.innerHTML);
 
-for (let index = 0; index < elems.length; index++) {
-    const element = elems[index];
+
+
+// let sel=document.querySelector('.child');
+// sel=document.querySelector('h1');
+// sel=document.querySelector('div');
+// console.log(sel);
+
+
+//2.multiple selectors
+let elem= document.getElementsByClassName('child');
+// console.log(elem[0]);
+// elem=document.getElementsByClassName('container');
+// console.log(elem[0].getElementsByClassName('child'))
+// elem=document.getElementsByTagName('div')
+// console.log(elem)
+// Array.from(elem).forEach(elements =>{
+//     console.log(elements);
+// });
+
+
+
+for (let index = 0; index < elem.length; index++) {
+    const element = elem[index];
     console.log(element);
    element.style.color = 'blue'; 
 }
-// Array.from(elems).forEach(element => {
-//     console.log(element);
-//    element.style.color = 'blue'; 
-// });
-// console.log(elems[0].getElementsByClassName('child'))
