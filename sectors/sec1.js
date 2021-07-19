@@ -9,13 +9,13 @@ element selectors:
 
 
 
-// let element=document.getElementById('myfirst');
+let element=document.getElementById('myfirst');
 // console.log(element);
 // console.log(element.className);
 // console.log(element.childNodes);
 // console.log(element.parentNode);
-// element.style.color='red';
-// element.innerText='sahil gupta';
+element.style.color='red';
+element.innerText='sahil gupta';
 // element.innerHTML='<b>its me</b>';
 // console.log(element.innerHTML);
 
@@ -40,8 +40,8 @@ let elem= document.getElementsByClassName('child');
 
 
 
-for (let index = 0; index < elem.length; index++) {
-    const element = elem[index];
-    console.log(element);
-   element.style.color = 'blue'; 
-}
+// for (let index = 0; index < elem.length; index++) {
+//     const element = elem[index];
+//     console.log(element);
+//    element.style.color = 'blue'; 
+// }
